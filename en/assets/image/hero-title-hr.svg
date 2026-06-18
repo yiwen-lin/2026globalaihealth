@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_1" data-name="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 693 1">
+  <!-- Generator: Adobe Illustrator 30.5.1, SVG Export Plug-In . SVG Version: 2.1.4 Build 3)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#_未命名漸層_74);
+      }
+
+      .st1 {
+        fill: url(#_未命名漸層_741);
+      }
+
+      .st2 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <linearGradient id="_未命名漸層_74" data-name="未命名漸層 74" x1="0" y1=".5" x2="693" y2=".5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#39a0d2"/>
+      <stop offset="1" stop-color="#9dc9b1"/>
+    </linearGradient>
+    <clipPath id="clippath">
+      <rect class="st0" width="693" height="1"/>
+    </clipPath>
+    <linearGradient id="_未命名漸層_741" data-name="未命名漸層 74" y1="2.4" x2="692.8" y2="2.4" gradientTransform="translate(0 2.8) scale(1 -1)" xlink:href="#_未命名漸層_74"/>
+  </defs>
+  <rect class="st0" width="693" height="1"/>
+  <g class="st2">
+    <path class="st1" d="M692.8,0H0v.8h692.8v-.8Z"/>
+  </g>
+</svg>

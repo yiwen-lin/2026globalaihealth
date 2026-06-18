@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_1" data-name="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 320 1">
+  <!-- Generator: Adobe Illustrator 30.5.1, SVG Export Plug-In . SVG Version: 2.1.4 Build 3)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#_未命名漸層_3);
+      }
+    </style>
+    <linearGradient id="_未命名漸層_3" data-name="未命名漸層 3" x1="0" y1="2.3" x2="320" y2="2.3" gradientTransform="translate(0 2.8) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#39a0d2"/>
+      <stop offset="1" stop-color="#9dc9b1"/>
+    </linearGradient>
+  </defs>
+  <path class="st0" d="M320,1H0V0h320v1Z"/>
+</svg>
