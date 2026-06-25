@@ -5,7 +5,7 @@
   --card-bg: #0d2b27;
   --text-light: #e0f0ee;
   --text-muted: #7ab8b0;
-  --gold: #d4a843;
+  --gold: #75CCF3;
   --border: rgba(0, 201, 167, 0.2);
 }
 
@@ -207,7 +207,7 @@ nav .nav-list a {
   transition: color 0.2s;
 }
 nav .nav-list a:hover {
-  color: #d4a843;
+  color: #75CCF3;
 }
 nav .nav-list a.nav-lang {
   font-size: 16px;
@@ -299,7 +299,7 @@ nav .hamburger.is-open span:nth-child(3) {
     transition: color 0.2s, background 0.2s;
   }
   .mobile-menu a:hover {
-    color: #d4a843;
+    color: #75CCF3;
     background: rgba(255, 255, 255, 0.04);
   }
   .mobile-menu a.nav-lang {
@@ -821,7 +821,7 @@ section.speakers .speaker-slide h3.point::after {
 section.speakers .speaker-slide .title {
   font-size: 20px;
   color: #fff;
-  line-height: 34px;
+  line-height: 28px;
   position: relative;
   z-index: 1;
 }
@@ -1872,9 +1872,9 @@ footer .footer-org-logo-3 img {
 .speaker-popup .popup-body .details .bio {
   font-size: 20px;
   color: #000000;
-  line-height: 27px;
+  line-height: 32px;
   margin-top: 53px;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 @media (max-width: 991px) {
   .speaker-popup .popup-body .details .bio {

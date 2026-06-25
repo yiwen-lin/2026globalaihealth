@@ -63,81 +63,70 @@ document.addEventListener('DOMContentLoaded', () => {
   (function initSpeakers() {
     const speakerData = {
 	  1: {
-        name: 'James C. F. Huang',
-        title: 'President, China Steel Corporation (CSC)',
+        name: 'Marc Succi',
+        title: 'Founder & Executive Director, MESH Incubator／Associate Professor, Harvard Medical School',
         img: './assets/image/speaker-1.png',
-        bio: `<p>With over 30 years of experience in the steel industry, he began his career in engineering and participated in CSC’s Phase III and IV expansions, as well as the planning and construction of Dragon Steel’s hot rolling mill. He later served as Plant Manager of Rolling Mill No. 2 and Deputy Vice President of Production.</p>
-		<p>With extensive expertise in engineering planning and production management, he is committed to enhancing manufacturing capabilities and advancing low-carbon and sustainability initiatives, strengthening CSC’s global competitiveness.</p>`,
+        bio: '<p>Dr. Succi is a radiologist, entrepreneur, inventor, and Associate Professor at Harvard Medical School whose work focuses on artificial intelligence, smart healthcare, and clinical innovation. He is the Founder and Executive Director of the MESH Incubator at Massachusetts General Hospital, where he helps transform frontline clinical needs into patentable, commercializable, and licensable healthcare solutions. He also leads research on generative AI for clinical decision support. Named to the Forbes 30 Under 30 list in Science and Healthcare and a recipient of the MIT Data Prize, Dr. Succi regularly teaches and speaks internationally on AI, healthcare innovation, and the translation of medical technologies from clinical practice to industry.</p>'
       },
       2: {
-        name: 'Dr. Marc Succi',
-        title: 'Founder & Executive Director, Mass General Brigham MESH Incubator and Associate Professor of Radiology, Harvard Medical School',
+        name: 'Jan Beger',
+        title: 'Global Head of AI Advocacy, GE HealthCare',
         img: './assets/image/speaker-2.png',
-        bio: `<p>Ed Smith has spent the past 30 years in the fastener industry working across distribution, sales, and procurement — most recently as part of the Procurement team at Wurth Industry USA.</p>
-		<p>In 2025, Ed took on the role of President of the National Fastener Distributors Association, where he’s focused on helping members navigate an uncertain market and building a stronger, more connected industry for the next generation.</p>`,
+        bio: '<p>Jan Beger is Global Head of AI Advocacy at GE HealthCare and Executive Director of HelloAI, helping healthcare professionals translate AI from theory into practical clinical impact. With over 20 years of experience in healthcare informatics, medical imaging, and AI, he focuses on the real challenges of AI adoption: trust, workflow integration, clinical implementation, and patient benefit. Known for making complex AI developments clear and actionable, Jan supports clinicians and health system leaders in understanding how AI can improve workflows, empower care teams, and move healthcare organizations from hype to real-world implementation.</p>',
       },
 	  3: {
-        name: 'Jan Beger',
-        title: 'GE Global Head of AI Advocacy',
+        name: 'SHIH-AN CHEN',
+        title: 'Laureate, Industrial Technology Research Institute (ITRI), Professor of Medicine, National Yang Ming Chiao Tung University (NYCU)',
         img: './assets/image/speaker-3.png',
-        bio: `<p>Former Deputy Secretary General of Thailand BOI, Mr. Chanin Khaochan has extensive experience in global investment and industrial development.</p>
-		<p>He initiated SUBCON Thailand to connect international markets and support SME growth, and continues to serve as an investment advisor.</p>`,
+        bio: `<p>Prof. Shih-An Chen is a global pioneer in catheter ablation therapy for cardiac arrhythmias. He proposed the theory of non-pulmonary vein atrial fibrillation and introduced spectral analysis of electrophysiological signals to improve the success rate of atrial fibrillation ablation, a method widely recognized as the “Taipei Approach.” Beyond his clinical and academic achievements, Prof. Chen has played a key role in advancing smart healthcare in Taiwan. He has led national and international initiatives in smart medical devices, clinical trials, and healthcare technology collaborations, helping accelerate AI-enabled healthcare innovation and global partnerships.</p>`,
       },
       4: {
-        name: 'Dr. Shih-An Chen',
-        title: 'Honorary Superintendent, Taichung Veterans General Hospital',
+        name: 'MAISZU WU',
+        title: 'President, Taipei Medical University (TMU)',
         img: './assets/image/speaker-4.png',
-        bio: `<p>Specialized in greenhouse gas inventory, emissions reduction, and carbon footprint verification, with qualifications including ISO 14064 and ISO 14067, and experience in multiple ISO management system audits.</p> 
-		<p>Previously served as Deputy General Manager of Bureau Veritas Certification Taiwan, with extensive experience in international certification and sustainability practices.</p>`,
+        bio: `<p>President of Taipei Medical University, Prof. Mai-Szu Wu is a nephrology expert with extensive clinical, teaching, and research experience. He leads TMU’s medical and digital transformation by advancing AI healthcare platforms, integrating clinical data, cross-disciplinary resources, and workflow automation into clinical practice and long-term care. He also promotes future medical education through virtual hospital initiatives and innovative training models, cultivating next-generation healthcare professionals with a global perspective.</p>`,
       },
       5: {
-        name: 'Dr. Mai-Szu Wu',
-        title: 'President, Taipei Medical University (TMU)',
+        name: 'CHIEN-TZUNG CHEN',
+        title: 'Superintendent, Linkou Chang Gung Memorial Hospital',
         img: './assets/image/speaker-5.png',
-        bio: `<p>With nearly 20 years of experience in industry analysis and policy research, she serves as an Industry Consultant at MIRDC, focusing on Taiwan’s fastener industry, smart manufacturing, and low-carbon transformation.</p>
-		<p>She previously worked at a Washington, D.C. think tank and was selected for Japan’s IDE-JETRO program. She has published over 100 articles and delivered numerous keynote speeches on industry trends and policy insights.</p>`,
+        bio: `<p>Dr. Chien-Tzung Chen is Superintendent of Linkou Chang Gung Memorial Hospital. A graduate of Kaohsiung Medical University, he completed fellowship training in plastic surgery at the University of Texas Southwestern Medical Center and has held key leadership roles at Chang Gung, including Director of Trauma and Plastic Surgery, Superintendent of Keelung Chang Gung Memorial Hospital, and Executive Vice Superintendent of Linkou Chang Gung Memorial Hospital. </p>
+		<p>With more than 130 academic papers and book chapters, he has been actively involved in international medical societies and collaborations, contributing to the advancement of general and plastic surgery in Taiwan and beyond.</p>`,
       },
       6: {
-        name: 'Dr. Chen, Chien-Tzung',
-        title: 'Superintendent, Linkou Chang Gung Memorial Hospital',
+        name: 'JOE YEH',
+        title: 'CEO, aetherAI Co., Ltd.',
         img: './assets/image/speaker-6.png',
-        bio: `<p>With over 30 years in the fastener industry, he founded Yow Chern in 2001 and led its transformation into a manufacturer of automotive and industrial specialty fasteners, serving supply chains across Europe, the U.S., and Japan. The company was successfully listed in 2025.</p>
-		<p>Yow Chern continues to advance automation and smart manufacturing, achieving IATF 16949 and ISO 14001 certifications, and developing the TEC Washer solution for high-end applications, strengthening Taiwan’s global competitiveness.</p>`,
+        bio: `<p>Dr. Joe Yeh is CEO of aetherAI Co., Ltd. He graduated from National Taiwan University College of Medicine and later pursued a PhD in pathology at the University of Southern California, where he applied optical microscopy to study cellular dynamics in embryonic development. </p> 
+		<p>Inspired by the precision of computer algorithms in image analysis, he left academia to found aetherAI. As a leading medical imaging AI company in Taiwan, aetherAI collaborates with top medical centers to help pathologists make faster and more accurate diagnoses. The company has received multiple innovation awards and is expanding its digital pathology solutions into overseas markets.</p>`,
       },
       7: {
-        name: 'Chao-Yuan (Joe) Yeh',
-        title: 'MD, PhD, Founder and CEO, aetherAI',
+        name: 'WEN-HAN CHANG',
+        title: 'Superintendent / DRPH, MacKay Memorial Hospital',
         img: './assets/image/speaker-7.png',
-        bio: `<p>With extensive experience in the aerospace fastener industry, he leads the transition from traditional manufacturing to global operations, strengthening partnerships with aerospace customers in Europe, the United States, and Asia.</p> 
-		<p>Focusing on future technology and talent development, he promotes organizational transformation and enhances competitiveness, reinforcing Taiwan’s position in the global aerospace supply chain.</p>`,
+        bio: `<p>Dr. Wen-Han Chang is Superintendent of MacKay Memorial Hospital, where he has served for nearly 27 years in key leadership roles, including Director of Emergency Medicine and Vice Superintendent. </p> 
+		<p>His expertise spans surgery, emergency medicine, geriatric emergency and critical care, trauma medicine, and emergency ultrasound. His research focuses on emergency and trauma care, long-term care, hospital management, and AI-enabled healthcare applications. Recognized with multiple medical and sustainability awards, he has also represented Taiwan in international medical exchanges, demonstrating strong healthcare leadership and global influence.</p>`,
       },
       8: {
-        name: 'Dr. Wen-Han Chang',
-        title: 'Superintendent of MacKay Memorial Hospital',
+        name: 'Allen Lien',
+        title: 'Chairman & Chief Executive Officer, Acer Medical Inc.',
         img: './assets/image/speaker-8.png',
-        bio: `<p>With extensive experience in the aerospace fastener industry, he leads the transition from traditional manufacturing to global operations, strengthening partnerships with aerospace customers in Europe, the United States, and Asia.</p> 
-		<p>Focusing on future technology and talent development, he promotes organizational transformation and enhances competitiveness, reinforcing Taiwan’s position in the global aerospace supply chain.</p>`,
+        bio: `<p>Dr. Allen Chia-En Lien is Chairman and CEO of Acer Medical, with a Doctor of Public Health degree from Harvard University and extensive experience in frontline medicine, public health, and international practice. A former epidemic prevention physician and diplomat, he leads Acer Medical in bridging technology and healthcare through AI and clinical big data.</p> 
+		<p>His work focuses on empowering healthcare professionals, improving workflow efficiency, advancing early disease screening, and bringing innovative AI healthcare solutions to global markets.</p>`,
       },
       9: {
-        name: 'Allen Chia-En Lien',
-        title: 'Chairman & Chief Executive Officer, Acer Medical ',
+        name: 'JULIE CHEN',
+        title: 'EVP, Medimaging Integrated Solution Inc.',
         img: './assets/image/speaker-9.png',
-        bio: `<p>With extensive experience in the aerospace fastener industry, he leads the transition from traditional manufacturing to global operations, strengthening partnerships with aerospace customers in Europe, the United States, and Asia.</p> 
-		<p>Focusing on future technology and talent development, he promotes organizational transformation and enhances competitiveness, reinforcing Taiwan’s position in the global aerospace supply chain.</p>`,
+        bio: `<p>Julie Chen is one of the founding members of Medimaging Integrated Solution Inc. and currently serves as Director and Executive Vice President, while also serving as General Manager of Aitronics. With more than 20 years of experience in medical devices and medical imaging, she focuses on the development of smart healthcare and digital imaging applications.</p> 
+		<p>Since the company’s founding, she has led international market expansion, built long-term partnerships with global strategic partners, and promoted the commercialization of AI medical imaging and telemedicine solutions. She is dedicated to strengthening the company’s global competitiveness and bringing Taiwan’s innovative medical technologies to the world.</p>`,
       },
       10: {
-        name: 'Julie Chen',
-        title: 'Executive Vice President, Business Development & Operation Group, Medimaging Integrated Solution Inc.',
+        name: 'James Lee',
+        title: 'Chief Operating Officer, V5med Inc.',
         img: './assets/image/speaker-10.png',
-        bio: `<p>With extensive experience in the aerospace fastener industry, he leads the transition from traditional manufacturing to global operations, strengthening partnerships with aerospace customers in Europe, the United States, and Asia.</p> 
-		<p>Focusing on future technology and talent development, he promotes organizational transformation and enhances competitiveness, reinforcing Taiwan’s position in the global aerospace supply chain.</p>`,
-      },
-      11: {
-        name: 'James C. L. Lee',
-        title: 'Chief Operating Officer (COO), V5med Inc.',
-        img: './assets/image/speaker-11.png',
-        bio: `<p>With extensive experience in the aerospace fastener industry, he leads the transition from traditional manufacturing to global operations, strengthening partnerships with aerospace customers in Europe, the United States, and Asia.</p> 
-		<p>Focusing on future technology and talent development, he promotes organizational transformation and enhances competitiveness, reinforcing Taiwan’s position in the global aerospace supply chain.</p>`,
+        bio: `<p>James Lee is Chief Operating Officer of V5med, with over 21 years of experience in international market development across medical devices, digital health, and AI healthcare. </p> 
+		<p>He has expanded markets in more than 50 countries across North America, Europe, the Middle East, Asia, and Latin America. His work focuses on the global commercialization of ultrasound AI and medical imaging AI solutions, including applications in thyroid cancer detection, sleep apnea assessment, and lung cancer screening. He is experienced in clinical validation, regulatory strategy, and overseas market expansion, helping Taiwan’s smart healthcare innovations connect with global markets.</p>`,
       },
     };
 
