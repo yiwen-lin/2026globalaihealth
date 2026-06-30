@@ -437,8 +437,8 @@ section.index .hero-title-1 {
   section.index .hero-title-1 {
     margin-top: 50px;
     margin-left: 0;
-    width: 110%;
-    margin-left: -5%;
+    width: 100%;
+    /* margin-left: -5%; */
   }
 }
 section.index .hero-title-hr {
@@ -471,7 +471,7 @@ section.index .hero-title-3 {
   }
 }
 section.index .hero-title-4 {
-  width: 100%;
+  width: 90%;
   margin-top: 36px;
 }
 

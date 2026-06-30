@@ -452,8 +452,8 @@ section.index .hero-title-2 {
 @media (max-width: 768px) {
   section.index .hero-title-2 {
     margin-top: 10%;
-    width: 110%;
-    margin-left: -5%;
+    width: 100%;
+    /* margin-left: -5%; */
   }
 }
 @media (max-width: 405px) {
