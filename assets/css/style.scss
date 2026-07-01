@@ -801,10 +801,31 @@ section.speakers {
     max-width: 1260px;
     margin: 70px auto 0;
     padding: 20px 40px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 40px 24px;
+
+    .speaker-slide {
+      grid-column: span 2;
+
+      &:nth-child(-n + 2) {
+        grid-column: span 3;
+      }
+    }
 
     @media (max-width: 991px) {
       padding: 0;
       margin-top: 90px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px 16px;
+
+      .speaker-slide {
+        grid-column: span 1;
+
+        &:nth-child(-n + 2) {
+          grid-column: span 1;
+        }
+      }
     }
   }
 
@@ -813,7 +834,6 @@ section.speakers {
     padding: 30px 24px;
     cursor: pointer;
     outline: none;
-    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
     position: relative;
 
     @media (max-width: 991px) {
@@ -832,6 +852,10 @@ section.speakers {
       background-repeat: no-repeat;
       pointer-events: none;
       z-index: 0;
+
+      @media (max-width: 991px) {
+        display: none;
+      }
     }
 
     .avatar {
@@ -844,10 +868,28 @@ section.speakers {
       position: relative;
       z-index: 1;
 
+      @media (max-width: 991px) {
+        &::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background-image:
+            url('./../image/speaker-light.png'),
+            url('./../image/speaker-people-bg.png');
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          pointer-events: none;
+          z-index: 0;
+        }
+      }
+
       img {
         height: 100%;
         width: auto;
         image-rendering: auto;
+        position: relative;
+        z-index: 1;
       }
 
       .avatar-name {
@@ -906,58 +948,6 @@ section.speakers {
         margin-top: 16px;
       }
     }
-  }
-
-  .slick-center {
-    transform: translateY(-70px);
-
-    @media (max-width: 991px) {
-      transform: translateY(0);
-    }
-  }
-
-  .slick-track {
-    padding: 60px 0;
-
-    @media (max-width: 991px) {
-      padding: 0px 0;
-    }
-  }
-
-  .slick-list {
-    -webkit-overflow-scrolling: touch;
-  }
-
-  // Slick arrows
-  .slick-prev,
-  .slick-next {
-    width: 16px;
-    height: 32px;
-    z-index: 10;
-
-    &::before {
-      display: none;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      opacity: 0.88;
-      transition: opacity 0.3s ease;
-    }
-
-    &:hover img {
-      opacity: 1;
-    }
-  }
-
-  .slick-prev {
-    left: 4px;
-  }
-
-  .slick-next {
-    right: 4px;
   }
 }
 

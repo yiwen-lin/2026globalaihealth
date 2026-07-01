@@ -43,8 +43,6 @@
     />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/slick-theme.css" />
-    <link rel="stylesheet" href="./assets/css/slick.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,7 +66,18 @@
       media="(max-width: 500px)"
     />
     <link rel="preload" href="./assets/image/hero-bottom.png" as="image" />
-    <link rel="preload" href="./assets/image/logo.svg" as="image" />
+    <link
+      rel="preload"
+      href="./assets/image/logo.svg"
+      as="image"
+      media="(min-width: 501px)"
+    />
+    <link
+      rel="preload"
+      href="./assets/image/logo-mb.svg"
+      as="image"
+      media="(max-width: 500px)"
+    />
     <link
       rel="preload"
       href="./assets/image/hero-title-1.svg"
@@ -235,6 +244,9 @@
           <div>
             <div class="logo pc">
               <img src="./assets/image/logo.svg" alt="" />
+            </div>
+            <div class="logo mb">
+              <img src="./assets/image/logo-mb.svg" alt="" />
             </div>
 
             <!-- 隱藏的 h1 -->
@@ -454,7 +466,7 @@
               <div class="avatar">
                 <img src="./assets/image/speaker-3.png" alt="" />
               </div>
-              <h3>SHIH-AN<br />CHEN</h3>
+              <h3>Shih-An<br />Chen</h3>
               <div class="title">
                 <p>Laureate, Industrial Technology Research Institute (ITRI)</p>
                 <p>
@@ -467,7 +479,7 @@
               <div class="avatar">
                 <img src="./assets/image/speaker-4.png" alt="" />
               </div>
-              <h3>MAISZU WU</h3>
+              <h3>Mai-Szu Wu</h3>
               <div class="title">
                 <p>President, Taipei Medical University (TMU)</p>
               </div>
@@ -477,8 +489,8 @@
                 <img src="./assets/image/speaker-5.png" alt="" />
               </div>
               <h3>
-                CHIEN-TZUNG
-                <p>CHEN</p>
+                Chien-Tzung
+                <p>Chen</p>
               </h3>
               <div class="title">
                 <p>Superintendent,</p>
@@ -489,7 +501,7 @@
               <div class="avatar">
                 <img src="./assets/image/speaker-6.png" alt="" />
               </div>
-              <h3>JOE YEH</h3>
+              <h3>Joe Yeh</h3>
               <div class="title">
                 <p>CEO, aetherAI Co., Ltd.</p>
               </div>
@@ -500,8 +512,8 @@
                 <img src="./assets/image/speaker-7.png" alt="" />
               </div>
               <h3>
-                WEN-HAN
-                <p>CHANG</p>
+                Wen-Han
+                <p>Chang</p>
               </h3>
               <div class="title">
                 <p>Superintendent / DRPH, MacKay Memorial Hospital</p>
@@ -520,7 +532,7 @@
               <div class="avatar">
                 <img src="./assets/image/speaker-9.png" alt="" />
               </div>
-              <h3>JULIE CHEN</h3>
+              <h3>Julie Chen</h3>
               <div class="title">
                 <p>EVP, Medimaging Integrated Solution Inc.</p>
               </div>
@@ -996,8 +1008,9 @@
                       data-err_id="privacy_policy"
                     ></div>
                     <div class="privacy-policy-content">
-                      I have fully understood the<a
-                        href="https://pdp.cwg.tw/view/B/B-20260610005"
+                      I have fully understood the
+                      <a
+                        href="https://pdp.cwg.tw/view/C/C-20260630002"
                         target="_blank"
                       >
                         Personal Data Collection Consent Form</a
@@ -1079,7 +1092,6 @@
 
     <!-- 原有的 JS -->
     <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/main.js"></script>
 

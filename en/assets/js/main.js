@@ -75,33 +75,33 @@ document.addEventListener('DOMContentLoaded', () => {
         bio: '<p>Jan Beger is Global Head of AI Advocacy at GE HealthCare and Executive Director of HelloAI, helping healthcare professionals translate AI from theory into practical clinical impact. With over 20 years of experience in healthcare informatics, medical imaging, and AI, he focuses on the real challenges of AI adoption: trust, workflow integration, clinical implementation, and patient benefit. Known for making complex AI developments clear and actionable, Jan supports clinicians and health system leaders in understanding how AI can improve workflows, empower care teams, and move healthcare organizations from hype to real-world implementation.</p>',
       },
 	  3: {
-        name: 'SHIH-AN CHEN',
+        name: 'Shih-An Chen',
         title: 'Laureate, Industrial Technology Research Institute (ITRI), Professor of Medicine, National Yang Ming Chiao Tung University (NYCU)',
         img: './assets/image/speaker-3.png',
         bio: `<p>Prof. Shih-An Chen is a global pioneer in catheter ablation therapy for cardiac arrhythmias. He proposed the theory of non-pulmonary vein atrial fibrillation and introduced spectral analysis of electrophysiological signals to improve the success rate of atrial fibrillation ablation, a method widely recognized as the “Taipei Approach.” Beyond his clinical and academic achievements, Prof. Chen has played a key role in advancing smart healthcare in Taiwan. He has led national and international initiatives in smart medical devices, clinical trials, and healthcare technology collaborations, helping accelerate AI-enabled healthcare innovation and global partnerships.</p>`,
       },
       4: {
-        name: 'MAISZU WU',
+        name: 'Mai-Szu Wu',
         title: 'President, Taipei Medical University (TMU)',
         img: './assets/image/speaker-4.png',
         bio: `<p>President of Taipei Medical University, Prof. Mai-Szu Wu is a nephrology expert with extensive clinical, teaching, and research experience. He leads TMU’s medical and digital transformation by advancing AI healthcare platforms, integrating clinical data, cross-disciplinary resources, and workflow automation into clinical practice and long-term care. He also promotes future medical education through virtual hospital initiatives and innovative training models, cultivating next-generation healthcare professionals with a global perspective.</p>`,
       },
       5: {
-        name: 'CHIEN-TZUNG CHEN',
+        name: 'Chien-Tzung Chen',
         title: 'Superintendent, Linkou Chang Gung Memorial Hospital',
         img: './assets/image/speaker-5.png',
         bio: `<p>Dr. Chien-Tzung Chen is Superintendent of Linkou Chang Gung Memorial Hospital. A graduate of Kaohsiung Medical University, he completed fellowship training in plastic surgery at the University of Texas Southwestern Medical Center and has held key leadership roles at Chang Gung, including Director of Trauma and Plastic Surgery, Superintendent of Keelung Chang Gung Memorial Hospital, and Executive Vice Superintendent of Linkou Chang Gung Memorial Hospital. </p>
 		<p>With more than 130 academic papers and book chapters, he has been actively involved in international medical societies and collaborations, contributing to the advancement of general and plastic surgery in Taiwan and beyond.</p>`,
       },
       6: {
-        name: 'JOE YEH',
+        name: 'Joe Yeh',
         title: 'CEO, aetherAI Co., Ltd.',
         img: './assets/image/speaker-6.png',
         bio: `<p>Dr. Joe Yeh is CEO of aetherAI Co., Ltd. He graduated from National Taiwan University College of Medicine and later pursued a PhD in pathology at the University of Southern California, where he applied optical microscopy to study cellular dynamics in embryonic development. </p> 
 		<p>Inspired by the precision of computer algorithms in image analysis, he left academia to found aetherAI. As a leading medical imaging AI company in Taiwan, aetherAI collaborates with top medical centers to help pathologists make faster and more accurate diagnoses. The company has received multiple innovation awards and is expanding its digital pathology solutions into overseas markets.</p>`,
       },
       7: {
-        name: 'WEN-HAN CHANG',
+        name: 'Wen-Han Chang',
         title: 'Superintendent / DRPH, MacKay Memorial Hospital',
         img: './assets/image/speaker-7.png',
         bio: `<p>Dr. Wen-Han Chang is Superintendent of MacKay Memorial Hospital, where he has served for nearly 27 years in key leadership roles, including Director of Emergency Medicine and Vice Superintendent. </p> 
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		<p>His work focuses on empowering healthcare professionals, improving workflow efficiency, advancing early disease screening, and bringing innovative AI healthcare solutions to global markets.</p>`,
       },
       9: {
-        name: 'JULIE CHEN',
+        name: 'Julie Chen',
         title: 'EVP, Medimaging Integrated Solution Inc.',
         img: './assets/image/speaker-9.png',
         bio: `<p>Julie Chen is one of the founding members of Medimaging Integrated Solution Inc. and currently serves as Director and Executive Vice President, while also serving as General Manager of Aitronics. With more than 20 years of experience in medical devices and medical imaging, she focuses on the development of smart healthcare and digital imaging applications.</p> 
@@ -129,75 +129,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		<p>He has expanded markets in more than 50 countries across North America, Europe, the Middle East, Asia, and Latin America. His work focuses on the global commercialization of ultrasound AI and medical imaging AI solutions, including applications in thyroid cancer detection, sleep apnea assessment, and lung cancer screening. He is experienced in clinical validation, regulatory strategy, and overseas market expansion, helping Taiwan’s smart healthcare innovations connect with global markets.</p>`,
       },
     };
-
-    const $carousel = $('.speakers-carousel');
-
-    $carousel.slick({
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      centerMode: true,
-      centerPadding: '0px',
-      arrows: true,
-      prevArrow:
-        '<button type="button" class="slick-prev"><img src="./assets/image/arrow-prev.svg" alt="prev"></button>',
-      nextArrow:
-        '<button type="button" class="slick-next"><img src="./assets/image/arrow-next.svg" alt="next"></button>',
-      dots: false,
-      autoplay: true,
-      autoplaySpeed: 4000,
-      pauseOnHover: true,
-      pauseOnFocus: true,
-      speed: 500,
-      cssEase: 'cubic-bezier(0.25, 0.1, 0.25, 1)',
-      useCSS: true,
-      useTransform: true,
-      responsive: [
-        { breakpoint: 1024, settings: { slidesToShow: 2 } },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            centerPadding: '0',
-            arrows: false,
-            autoplay: false,
-          },
-        },
-      ],
-    });
-
-    const LIFT = -70;
-    const SPEED = 500;
-
-    function updateSlidePositions(centerIndex) {
-      const isMobile = window.innerWidth <= 991;
-      const slideCount = $carousel.find('.slick-slide:not(.slick-cloned)').length;
-
-      $carousel.find('.slick-slide').each(function () {
-        const $slide = $(this);
-        const slideIndex = parseInt($slide.data('slick-index'));
-        // Normalize to handle cloned slides (infinite mode creates clones with out-of-range indices)
-        const normalizedIndex = ((slideIndex % slideCount) + slideCount) % slideCount;
-        const isCenter = normalizedIndex === centerIndex;
-        const y = !isMobile && isCenter ? LIFT : 0;
-
-        $slide.css({
-          transform: `translateY(${y}px) translateZ(0)`,
-          transition: `transform ${SPEED}ms cubic-bezier(0.25, 0.1, 0.25, 1)`,
-        });
-      });
-    }
-
-    $carousel.on(
-      'beforeChange',
-      function (event, slick, currentSlide, nextSlide) {
-        updateSlidePositions(nextSlide);
-      },
-    );
-
-    $carousel.on('init', function (event, slick) {
-      updateSlidePositions(slick.currentSlide);
-    });
 
     const $popup = $('#speakerPopup');
 
