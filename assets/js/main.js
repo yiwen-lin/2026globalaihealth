@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const speakerData = {
 	  1: {
         name: 'Marc Succi',
-        title: 'Mass General Brigham MESH Incubator 創辦人暨執行董事 / 哈佛醫學院放射學副教授',
+        title: '麻省總醫院MESH創新孵化器 創辦人暨執行長 / 哈佛醫學院 放射科副教授',
         img: './assets/image/speaker-1.png',
         bio: `<p>Dr. Succi為放射科醫師、企業家、發明家及哈佛醫學院副教授，長期投入人工智慧、智慧醫療與臨床創新。</p>
             <p>他是麻省總醫院MESH醫療創新孵化器創辦人暨執行主任，致力將第一線臨床需求轉化為可專利化、商品化及授權的醫療解決方案，並主持生成式AI臨床決策支援研究。Dr. Succi曾入選《富比士》科學與醫療領域30位30歲以下菁英，並獲MIT Data Prize等多項國際肯定。他亦經常於哈佛及全球各地講授智慧醫療、AI與醫療創新，推動醫療、科技與產業之間的跨域合作。</p>`,
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			<p>在宏碁智醫，他致力於串聯科技與醫學，引領團隊運用人工智慧與臨床大數據推動「智在醫療」，協助醫療從業人員提升流程效率、推進疾病早期篩檢，並將創新產品導入全球市場，打造以人為本的智慧醫療生態系。</p>`,
       },
       9: {
-        name: '陳靜怡',
+        name: '陳錦怡',
         title: '晉弘科技事業開發總部 執行副總',
         img: './assets/image/speaker-9.png',
         bio: `<p>陳錦怡為晉弘科技初始共同創辦人之一，現任董事暨執行副總經理，並兼任 Aitronics 總經理。她深耕醫療器材與醫療影像產業逾二十年，專注於智慧醫療與數位影像應用發展。</p>
