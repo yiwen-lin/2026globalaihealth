@@ -123,10 +123,10 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       10: {
         name: 'James Lee',
-        title: 'Chief Operating Officer, V5med Inc.',
+        title: 'Neurobit Technologies Co., Ltd. Corporate Strategy Advisor',
         img: './assets/image/speaker-10.png',
-        bio: `<p>James Lee is Chief Operating Officer of V5med, with over 21 years of experience in international market development across medical devices, digital health, and AI healthcare. </p> 
-		<p>He has expanded markets in more than 50 countries across North America, Europe, the Middle East, Asia, and Latin America. His work focuses on the global commercialization of ultrasound AI and medical imaging AI solutions, including applications in thyroid cancer detection, sleep apnea assessment, and lung cancer screening. He is experienced in clinical validation, regulatory strategy, and overseas market expansion, helping Taiwan’s smart healthcare innovations connect with global markets.</p>`,
+        bio: `<p>James Lee is currently a Corporate Strategy Advisor at Neurobit Technologies. He previously served as Chief Operating Officer of V5med and Vice President of Business Development at AmCad BioMed. With over 21 years of experience in medical devices, digital health, and medical AI, he has successfully expanded business across more than 50 countries in North America, Europe, the Middle East, Asia, and Latin America.</p> 
+		<p>He specializes in the global commercialization of medical AI solutions, including lung cancer AI, thyroid AI, ultrasound AI, and digital health. His expertise spans international business strategy, market access, regulatory planning, strategic partnerships, and cross-border collaborations, helping bring Taiwan’s healthcare AI innovations to global markets.</p>`,
       },
     };
 
